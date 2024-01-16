@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'gandom';
+    src: url('../fonts/woff/Gandom.woff') format('woff'),
+    url("../fonts/ttf/Gandom.ttf") format('ttf');
+}
+
+body {
+    font-family: 'gandom';
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.button i {
+   margin-left: 6px; 
+}
+
+.lang {
+  font-family: sans-serif;
+}
+
+.lang i {
+  margin-right: 4px;
+}
+
+nav ul li {
+  cursor: pointer;
+  
+}
+
+nav li.active {
+  font-weight: 500;
+} 
+
+nav ul li .marker {
+  margin-left: 12px;
+}
+
+nav ul li:not(:last-child)::after {
+  border-right: 1px dashed #333533;
+  margin: 16px 21px 16px 0px;
+}
+
+/* SECTIONS */
+
+.sections {
+  border-right: 1px solid #333533;
+  padding-right: 50px;
+}
+
+.contact p i {
+  margin-right: 10px;
+}
+
+.socials li {
+  margin-left: 24px;
+}
+
+.skills li img {
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+.skills li i {
+  padding: 10px 12px;
+}
+
+.other-skills li {
+  margin: 0 16px 18px 0;
+}
+
+.other-skills li:first-child,
+.other-skills li:last-child {
+    margin-right: 0;
+}
+
+.project .button a:last-child {
+  margin-right: 5px;
+}
+
+.project .buttons a i {
+  margin-left: 5px;
+}

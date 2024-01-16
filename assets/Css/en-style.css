@@ -1,0 +1,59 @@
+/* GLOBALLY */
+
+ * {
+  font-family: "poppins", sans-serif;
+}
+
+.button i {
+   margin-right: 6px; 
+}
+
+.lang i {
+  margin-right: 4px;
+}
+
+nav ul li .marker {
+  margin-right: 12px;
+}
+
+nav ul li:not(:last-child)::after {
+  border-left: 1px dashed #333533;
+  margin: 16px 0px 16px 21px;
+}
+
+/* SECTIONS */
+
+.sections {
+  border-left: 1px solid #333533;
+  padding-left: 50px;
+}
+
+.contact p i {
+  margin-left: 10px;
+}
+
+.socials li {
+  margin-right: 24px;
+}
+
+.skills li img {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.skills li i {
+  padding: 10px 12px;
+  border-left: 1px solid #a0a0a0;
+}
+
+.other-skills li {
+  margin: 0 16px 18px 0;
+}
+
+.project .button a:last-child {
+  margin-left: 5px;
+}
+
+.project .buttons a i {
+  margin-right: 5px;
+}

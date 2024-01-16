@@ -1,0 +1,363 @@
+/* GLOBALLY */
+
+* {
+  transition: all 0.3s;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333533;
+  font-size: 16px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h5 {
+  margin-bottom: 5px;
+  color: #a0a0a0;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* CONTAINERS */
+
+.header,
+.container {
+  display: flex;
+  padding: 45px 0;
+  justify-content: center;
+}
+
+/* HEADER */
+
+.header {
+  background-color: #333533;
+  height: 376px;
+  align-items: center;
+}
+
+.header .title {
+  margin: 0 50px;
+}
+
+.header .title h1 {
+  color: #ffd100;
+  font-size: 56px;
+  margin: 0;
+  line-height: 1;
+}
+
+.header .position {
+  color: #f5f5f5;
+  font-size: 32px;
+  margin: 40px 0;
+}
+
+.header .position i,
+.header .title h1,
+.button,
+.button i {
+  color: #ffd100;
+}
+
+.button {
+  border: 1px solid #ffd100;
+  padding: 8px 24px;
+}
+
+.button,
+.lang {
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:hover i {
+  background-color: #ffd100;
+  color: #333533;
+}
+
+.lang,
+.lang i {
+  color: #f5f5f5;
+}
+
+.lang {
+  border: 1px solid #f5f5f5;
+  padding: 4px 8px;
+  font-size: 12px;
+  opacity: 0.7;
+  align-self: flex-start;
+}
+
+.lang:hover {
+  opacity: 1;
+}
+
+.header img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+}
+
+/* NAVBAR */
+
+.container nav {
+  width: 250px;
+  font-size: 20px;
+}
+
+.container nav ul li {
+  cursor: pointer;
+}
+
+.container nav li.active {
+  font-weight: 500;
+}
+
+.container nav ul li .marker {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  display: inline-block;
+  border: 1px solid #333533;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.container nav ul li.active .marker,
+.container nav ul li:hover .marker {
+  background-color: #333533;
+  color: #ffd100;
+  font-size: 22px;
+}
+
+.container nav ul li:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 48px;
+}
+
+/* SECTIONS */
+
+.sections {
+  width: 700px;
+}
+
+.sections section:last-child {
+  width: 880px;
+}
+
+.contact {
+  display: flex;
+  margin: 25px 0 25px 0;
+}
+
+.contact div {
+  width: 50%;
+}
+
+.contact p {
+  margin-top: 0;
+}
+
+.contact p {
+  margin-top: 15px;
+}
+
+.contact p i {
+  font-size: 16px;
+  color: #a0a0a0;
+  cursor: pointer;
+}
+
+.contact p i:hover {
+  color: #333533;
+}
+
+.socials li {
+  display: inline-block;
+}
+
+.socials li span {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+}
+
+.socials li span.twitter {
+  background-image: url("../icons/social/twitter.jpg");
+}
+
+.socials li:hover span.twitter {
+  background-image: url("../icons/social/twitter-hover.jpg");
+}
+
+.socials li span.instagram {
+  background-image: url("../icons/social/insta.jpg");
+}
+
+.socials li:hover span.instagram {
+  background-image: url("../icons/social/insta-hover.jpg");
+}
+
+.socials li span.stackoverflow {
+  background-image: url("../icons/social/stackoverflow.jpg");
+}
+
+.socials li:hover span.stackoverflow {
+  background-image: url("../icons/social/stackoverflow-hover.jpg");
+}
+
+.socials li span.github {
+  background-image: url("../icons/social/github.jpg");
+}
+
+.socials li:hover span.github {
+  background-image: url("../icons/social/github-hover.jpg");
+}
+
+.socials li span.linkedin {
+  background-image: url("../icons/social/linkdin.jpg");
+}
+
+.socials li:hover span.linkedin {
+  background-image: url("../icons/social/linkedin-hover.jpg");
+}
+
+.socials li span.whatsapp {
+  background-image: url("../icons/social/whatsapp.jpg");
+}
+
+.socials li:hover span.whatsapp {
+  background-image: url("../icons/social/whatsapp-hover.jpg");
+}
+
+.socials li span.telegram {
+  background-image: url("../icons/social/telegram.jpg");
+}
+
+.socials li:hover span.telegram {
+  background-image: url("../icons/social/telegram-hover.jpg");
+}
+
+.skills li,
+.tools li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #a0a0a0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 10px 24px;
+}
+
+.skills li img {
+  vertical-align: middle;
+}
+
+.skills .title {
+  font-weight: 500;
+}
+
+.skills li i {
+  padding: 10px 12px;
+}
+
+.other-skills li {
+  display: inline-block;
+  padding: 4px 16px;
+  border: 1px solid #a0a0a0;
+  border-radius: 24px;
+}
+
+.project {
+  border: 1px solid #a0a0a0;
+  border-radius: 8px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 11px;
+  margin-bottom: 36px;
+}
+
+.project .title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.project .description {
+  font-size: 14px;
+  margin: 10px 0 0 0;
+}
+
+.tech {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tech ul li {
+  display: inline-block;
+}
+
+.tech ul li img {
+  width: 25px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project .buttons {
+  display: flex;
+}
+
+.project .buttons a {
+  width: 50%;
+  color: #333533;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 8px;
+
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+.project .buttons a:last-child,
+.project .buttons a:first-child:hover {
+  border: 1px solid #333533;
+  border-radius: 4px;
+}
+
+.project .buttons a:last-child:hover {
+  color: #f5f5f5;
+  background-color: #333533;
+}
