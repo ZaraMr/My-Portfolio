@@ -34,15 +34,15 @@
     <div class="container">
     <!-- NAVBAR -->
     <nav>
-      <ul>
-        <li class="active">
+      <ul class="nav__container">
+        <li class="nav__link nav__link--1 navbar__active" data-link="1">
           <span class="marker">
         <i class="fa-solid fa-angle-right"></i></span>
           درباره من</li>
-        <li>
+        <li class="nav__link nav__link--2" data-link="2">
          <span class="marker"><i class="fa-solid fa-angle-right"></i></span>
           توانایی ها</li>
-        <li>
+        <li class="nav__link nav__link--3" data-link="3">
           <span class="marker"><i class="fa-solid fa-angle-right"></i></span>
           پروژه ها</li>
       </ul>
@@ -50,7 +50,7 @@
 
     <div class="sections">
     <!-- ABOUT ME -->
-    <section  class="section-1">
+    <section  class="section__1 section--active">
       <h4>درباره من</h4>
       <p>
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
@@ -115,7 +115,7 @@
     </section>
     
     <!-- SKILLS -->
-    <section>
+    <section class="section__2">
 
       <div class="technology">
       <h4>تکنولوژی ها</h4>
@@ -175,7 +175,7 @@
        <!-- </div> -->
     </section>
 
-    <section>
+    <section class="section__3">
       <h4>پروژه های من :</h4>
       <div class="projects">
       <div class="project">
@@ -286,20 +286,22 @@
     </div>
 
     <nav class="mobile-nav">
-      <ul>
-        <li class="active">
-          <i class="fa-regular fa-user"></i>
+      <ul class="nav__container">
+        <li class="nav__link nav__link--1 navbar__active">
+        <span class="marker">  <i class="fa-regular fa-user" ></i></span>
           درباره
         </li>
-        <li>
-          <i class="fa-solid fa-code"></i>
+        <li class="nav__link nav__link--2">
+         <span class="marker"> <i class="fa-solid fa-code"></i></span>
           مهارت ها
         </li>
-        <li>
-          <i class="fa-solid fa-laptop-code"></i>
+        <li class="nav__link nav__link--3">
+          <span class="marker"><i class="fa-solid fa-laptop-code"></i></span>
           پروژه ها
         </li>
       </ul>
     </nav>
+
+    <script src="assets/Scripts/script.js"></script>
   </body>
 </html>

@@ -132,7 +132,7 @@ ul {
   cursor: pointer;
 }
 
-.container nav li.active {
+.container nav li.navbar__active {
   font-weight: 500;
 }
 
@@ -147,7 +147,7 @@ ul {
   vertical-align: middle;
 }
 
-.container nav ul li.active .marker,
+.container nav ul li.navbar__active .marker,
 .container nav ul li:hover .marker {
   background-color: #333533;
   color: #ffd100;
@@ -164,6 +164,14 @@ ul {
 
 .sections {
   width: 700px;
+}
+
+.section--active {
+  display: block;
+}
+
+section {
+  display: none;
 }
 
 .sections section:last-child {

@@ -34,15 +34,15 @@
     <div class="container">
     <!-- NAVBAR -->
     <nav>
-      <ul>
-        <li class="active">
+      <ul class="nav__container">
+        <li class="nav__link nav__link--1 navbar__active" data-link="1">
           <span class="marker">
         <i class="fa-solid fa-angle-right"></i></span>
           About Me</li>
-        <li>
+        <li class="nav__link nav__link--2" data-link="2">
          <span class="marker"><i class="fa-solid fa-angle-right"></i></span>
           My Skills</li>
-        <li>
+        <li class="nav__link nav__link--3" data-link="3">
           <span class="marker"><i class="fa-solid fa-angle-right"></i></span>
           My Projects</li>
       </ul>
@@ -50,7 +50,7 @@
 
     <div class="sections">
     <!-- ABOUT ME -->
-    <section  class="section-1">
+    <section  class="section__1 section--active">
       <h4>About Me</h4>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur,
@@ -62,15 +62,15 @@
       <div class="contact">
         <div>
       <h5>Email</h5>
-      <p>zhra.mrdi2907@gmail.com
-      <i class="fa-regular fa-clone"></i>
+      <p class="contact-info-email">zhra.mrdi2907@gmail.com
+      <i class="fa-regular fa-clone icon-email"></i>
       </p>
       </div>
 
       <div>
       <h5>Phone Number</h5>
-      <p>09170423384
-      <i class="fa-regular fa-clone"></i>
+      <p class="contact-info-number">09170423384
+      <i class="fa-regular fa-clone icon-num"></i>
       </p>
     </div>  
     </div>
@@ -98,7 +98,7 @@
           </a>
         </li>
         <li>
-          <a href="#" target="_blank">
+          <a href="https://www.linkedin.com/in/zahra-moradi-87029a271/" target="_blank">
             <span class="linkedin"></span>
           </a>
         </li>
@@ -117,7 +117,7 @@
     </section>
     
     <!-- SKILLS -->
-    <section>
+    <section class="section__2">
 
       <div class="technology">
       <!-- <h4>My Skills</h4> -->
@@ -178,7 +178,7 @@
        <!-- </div> -->
     </section>
 
-    <section>
+    <section class="section__3">
       <h4>My Projects :</h4>
       <div class="projects">
       <div class="project">
@@ -288,20 +288,22 @@
     </div>
     </div>
     <nav class="mobile-nav">
-      <ul>
-        <li class="active">
-          <i class="fa-regular fa-user"></i>
+      <ul class="nav__container">
+        <li class="nav__link nav__link--1 navbar__active">
+          <span class="marker"><i class="fa-regular fa-user"></i></span>
           About
         </li>
-        <li>
-          <i class="fa-solid fa-code"></i>
+        <li class="nav__link nav__link--2">
+         <span class="marker"><i class="fa-solid fa-code"></i></span> 
           Skills
         </li>
-        <li>
-          <i class="fa-solid fa-laptop-code"></i>
+        <li class="nav__link nav__link--3">
+          <span class="marker"><i class="fa-solid fa-laptop-code"></i></span>
           Projects
         </li>
       </ul>
     </nav>
+
+    <script src="assets/Scripts/script.js"></script>
   </body>
 </html>
