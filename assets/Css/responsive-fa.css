@@ -19,14 +19,6 @@
     border: none;
   }
 
-  .section--active {
-    display: block;
-  }
-
-  section {
-    display: none;
-  }
-
   .sections section:last-child {
     width: auto;
     /* border: none; */
@@ -93,14 +85,6 @@
 
   .sections {
     padding: 0 20px;
-  }
-
-  .section--active {
-    display: block;
-  }
-
-  section {
-    display: none;
   }
 
   .sections section {

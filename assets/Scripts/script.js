@@ -31,13 +31,13 @@ navContainer.addEventListener("click", function (e) {
 
   // Remove active classes
   navLinks.forEach((link) => link.classList.remove("navbar__active"));
-  sections.forEach((s) => s.classList.remove("section--active"));
+  sections.forEach((s) => s.classList.remove(".section--active"));
 
   // Add active classes
   clicked.classList.add("navbar__active");
   document
     .querySelector(`.section__${clicked.dataset.link}`)
-    .classList.add("section--active");
+    .classList.add("section__active");
 });
 
 console.log(sections);
