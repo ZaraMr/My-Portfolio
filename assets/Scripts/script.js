@@ -22,7 +22,7 @@ const navContainer = document.querySelector(".nav__container");
 const navLinks = document.querySelectorAll(".nav__link");
 const navLinksMarker = document.querySelectorAll(".marker");
 const navListActive = document.querySelector(".navbar__active");
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll(".section");
 
 navContainer.addEventListener("click", function (e) {
   const clicked = e.target.closest(".nav__link");
@@ -31,13 +31,13 @@ navContainer.addEventListener("click", function (e) {
 
   // Remove active classes
   navLinks.forEach((link) => link.classList.remove("navbar__active"));
-  sections.forEach((s) => s.classList.remove(".section--active"));
+  sections.forEach((s) => s.classList.remove("section--active"));
 
   // Add active classes
   clicked.classList.add("navbar__active");
   document
     .querySelector(`.section__${clicked.dataset.link}`)
-    .classList.add("section__active");
+    .classList.add("section--active");
 });
 
-console.log(sections);
+// console.log(sections);
