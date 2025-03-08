@@ -145,6 +145,12 @@
     flex: 1;
   }
 
+  .mobile-nav ul li:hover {
+    cursor: pointer;
+    color: #ffd100;
+    border-bottom: 4px solid #ffd100;
+  }
+
   .mobile-nav ul li i {
     margin-right: 5px;
   }
